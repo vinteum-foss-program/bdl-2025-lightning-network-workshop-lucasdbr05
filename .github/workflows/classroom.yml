@@ -21,7 +21,7 @@ jobs:
       uses: classroom-resources/autograding-io-grader@v1
       with:
         test-name: "Finished workshop"
-        command: "submissions/done.sh"
+        command: "chmod +x submissions/done.sh && submissions/done.sh"
         expected-output: "PASS"
         comparison-method: exact
         timeout: 10
